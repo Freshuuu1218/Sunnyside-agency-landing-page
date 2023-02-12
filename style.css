@@ -263,6 +263,7 @@ header{
     display: block;
 } 
 nav ul {
+    display: none;
     width: 90vw;
     height: 40vh;
     background-color: white;
