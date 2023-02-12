@@ -22,6 +22,9 @@
     <div class="logo">
       <img src="./images/logo.svg" alt="logo">
     </div>
+    <div class="hamburger">
+      <img src="./images/icon-hamburger.svg" alt="menu-icon">
+    </div>
     <nav>
       <ul>
         <li>About</li>
@@ -45,12 +48,18 @@
           <span class="learn-yellow">LEARN MORE</span>
         </div>
         <div class="square">
-          <img src="./images/desktop/image-transform.jpg" alt="image-transform">
+          <picture>
+            <source srcset="./images/mobile/image-transform.jpg" media="(max-width: 430px)">
+            <img src="./images/desktop/image-transform.jpg" alt="image-transform">
+          </picture>
         </div>
       </div>
       <div class="stand-out">
         <div class="square">
-          <img src="./images/desktop/image-stand-out.jpg" alt="stand-out">
+          <picture>
+            <source srcset="./images/mobile/image-stand-out.jpg" media="(max-width:430px)">
+            <img src="./images/desktop/image-stand-out.jpg" alt="stand-out">
+          </picture>
         </div>
         <div class="square text">
           <h2>Stand out to the right audience</h2>
@@ -101,10 +110,22 @@
       </div>
     </div>
     <div class="gallery">
-      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles">
-      <img src="./images/desktop/image-gallery-orange.jpg" alt="orange">
-      <img src="./images/desktop/image-gallery-cone.jpg" alt="cone">
-      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+      <picture>
+        <source srcset="./images/mobile/image-gallery-milkbottles.jpg" media="(max-width:430px)">
+        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles">
+      </picture>
+      <picture>
+        <source srcset="./images/mobile/image-gallery-orange.jpg" media="(max-width:430px)">
+        <img src="./images/desktop/image-gallery-orange.jpg" alt="orange">
+      </picture>
+      <picture>
+        <source srcset="./images/mobile/image-gallery-cone.jpg" media="(max-width:430px)">
+        <img src="./images/desktop/image-gallery-cone.jpg" alt="cone">
+      </picture>
+      <picture>
+        <source srcset="./images/mobile/image-gallery-sugar-cubes.jpg" media="(max-width:430px)">
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes">
+      </picture>
     </div>
   </main>
   <footer>

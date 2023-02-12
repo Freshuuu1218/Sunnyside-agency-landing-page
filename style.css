@@ -14,6 +14,9 @@ header{
     height: 10vh;
     padding: 0 3em;
 }
+.hamburger{
+    display: none;
+}
 
 nav ul{
     display: flex;
@@ -156,14 +159,19 @@ main{
     
 }
 .clients{
-    color: hsl(210, 4%, 67%);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10em 0;
 }
-.testimonials{
+.clients h2{
+    color: hsl(210, 4%, 67%);
+    letter-spacing: .3em;
+    font-size: 1.2em;
+    font-family: 'Fraunces';
     
+}
+.testimonials{
     width: 70%;
     display: flex;
     justify-content: center;
@@ -230,6 +238,10 @@ footer ul li{
     color: #2e7668;
     font-family: 'Barlow';
 }
+footer ul li:hover{
+    color: white;
+    cursor: pointer;
+}
 footer ul li:nth-child(2){
     margin: 0 3em;
 }
@@ -237,4 +249,161 @@ footer i{
     color: #2e7668;
     font-size: 1.25em;
     margin: 0 .5em;
+}
+footer i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:430px){
+    header {
+            height: 10vh;
+            padding: 0 1em;
+        }
+    
+        .hamburger {
+            margin: 0 0 0 auto;
+            display: block;
+        }
+    
+        nav ul {
+            display: none;
+        }
+.heading {
+    height: 65vh;
+    background-image: url('./images/mobile/image-header.jpg');
+    padding-bottom: 0;
+    background-size: 100% 100%;
+    background-position: center center;
+    text-align: center;
+}
+
+.heading h1 {
+    margin-top: -1.5em;
+    font-size: 2.75em;
+    margin-bottom: 2em;
+}
+.transform,
+.stand-out,
+.bottom {
+    display: flex;
+    height: 50%;
+}
+.transform {
+    flex-direction: column-reverse;
+}
+.stand-out{
+    flex-direction: column;
+}
+.transform img,
+.stand-out img{
+    width: 100%;
+}
+.square.text {
+    text-align: center;
+    width: 80%;
+    margin: 10%;
+}
+
+.square.text h2 {
+    font-size: 2.25em;
+    margin-bottom: .75em;
+}
+
+.square.text p {
+    font-size: 1.05em;
+    margin-bottom: 2em;
+}
+
+.learn-yellow::after {
+    left: 28.5%;
+}
+
+.learn-red::after {
+    left: 28.5%;
+}
+.bottom{
+    flex-direction: column;
+}
+.graphic {
+    background-image: url('./images/mobile/image-graphic-design.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 600px;
+}
+.photography {
+    background-image: url('./images/mobile/image-photography.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 600px;
+}
+.graphic h3,
+.photography h3 {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 1.75em;
+    margin-top: 107.5%;
+    margin-bottom: 1em;
+}
+.graphic p,
+.photography p {
+    width: 90%;
+    font-size: 1em;
+}
+
+
+
+.clients {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+}
+
+.clients h2 {
+    font-size: 1em;
+}
+
+.testimonials {
+    width: 90%;
+    flex-direction: column;
+    margin-top: 4em;
+}
+
+.testimonial {
+    width: 100%;
+}
+
+.testimonial:nth-child(2) {
+    margin: 5em 0;
+}
+
+.testimonial img {
+    margin-bottom: 1.5em;
+}
+.testimonial p{
+    font-size: 1.15em;
+}
+
+.testimonial .author {
+    margin-top: 2em;
+}
+
+.gallery {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+.gallery img {
+    margin: -4px;
+    width: 102%;
+}
+
+
+footer img {
+    width: 40%;
+}
 }
