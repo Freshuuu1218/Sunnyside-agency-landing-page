@@ -17,7 +17,9 @@ header{
 .hamburger{
     display: none;
 }
-
+.hidden{
+    display: none;
+}
 nav ul{
     display: flex;
     align-items: center;
@@ -123,8 +125,8 @@ main{
     height: 10px;
     background-color: hsl(7, 99%, 70%);
 }
-  .learn-yellow:hover::after,
-  .learn-red:hover::after{
+.learn-yellow:hover::after,
+.learn-red:hover::after{
     opacity: 1;
     cursor: pointer;
 }
@@ -156,7 +158,6 @@ main{
     width: 50%;
     margin: 0 auto;
     line-height: 1.65em;
-    
 }
 .clients{
     display: flex;
@@ -169,7 +170,6 @@ main{
     letter-spacing: .3em;
     font-size: 1.2em;
     font-family: 'Fraunces';
-    
 }
 .testimonials{
     width: 70%;
@@ -225,13 +225,11 @@ footer{
 footer img{
     width: 11%;
 }
-
 footer ul{
     list-style: none;
     display: flex;
     margin: 2em 0 4em;
 }
-
 footer ul li{
     display: flex;
     justify-content: space-between;
@@ -254,21 +252,51 @@ footer i:hover {
     color: white;
     cursor: pointer;
 }
-
 @media(max-width:430px){
-    header {
-            height: 10vh;
-            padding: 0 1em;
-        }
+header{
+    height: 10vh;
+    padding: 0 1em;
+}
     
-        .hamburger {
-            margin: 0 0 0 auto;
-            display: block;
-        }
-    
-        nav ul {
-            display: none;
-        }
+.hamburger {
+    margin: 0 0 0 auto;
+    display: block;
+} 
+nav ul {
+    width: 90vw;
+    height: 40vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    padding: 1em;
+}
+nav ul li:not(:last-child){
+    margin-left: 0;
+    font-size: 1.15em;
+    margin-bottom: 2em;
+    color: hsl(232, 10%, 55%);
+}
+nav ul li:last-child{
+    margin-left: 0;
+}
+nav ul::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -20px;
+    border-style: solid;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #fff transparent;
+    display: block;           
+}
+nav button {
+    background-color:hsl(51, 100%, 49%);
+    font-size: 1em;
+}
 .heading {
     height: 65vh;
     background-image: url('./images/mobile/image-header.jpg');
@@ -277,7 +305,6 @@ footer i:hover {
     background-position: center center;
     text-align: center;
 }
-
 .heading h1 {
     margin-top: -1.5em;
     font-size: 2.75em;
@@ -304,21 +331,17 @@ footer i:hover {
     width: 80%;
     margin: 10%;
 }
-
 .square.text h2 {
     font-size: 2.25em;
     margin-bottom: .75em;
 }
-
 .square.text p {
     font-size: 1.05em;
     margin-bottom: 2em;
 }
-
 .learn-yellow::after {
     left: 28.5%;
 }
-
 .learn-red::after {
     left: 28.5%;
 }
@@ -350,45 +373,35 @@ footer i:hover {
     width: 90%;
     font-size: 1em;
 }
-
-
-
 .clients {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 3em 0;
 }
-
 .clients h2 {
     font-size: 1em;
 }
-
 .testimonials {
     width: 90%;
     flex-direction: column;
     margin-top: 4em;
 }
-
 .testimonial {
     width: 100%;
 }
-
 .testimonial:nth-child(2) {
     margin: 5em 0;
 }
-
 .testimonial img {
     margin-bottom: 1.5em;
 }
 .testimonial p{
     font-size: 1.15em;
 }
-
 .testimonial .author {
     margin-top: 2em;
 }
-
 .gallery {
     margin-top: 4em;
     display: grid;
@@ -396,13 +409,10 @@ footer i:hover {
     grid-template-rows: 1fr 1fr;
     width: 100%;
 }
-
 .gallery img {
     margin: -4px;
     width: 102%;
 }
-
-
 footer img {
     width: 40%;
 }
